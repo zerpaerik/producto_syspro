@@ -143,23 +143,9 @@
                     <td>{{$eq->nompro}}</td>
                     <td>{{$eq->medida}}</td>
                     @if($eq->almacen_solicita == 2)
-                    <td>Almacen Recepción</td>
-                    @elseif($eq->almacen_solicita == 11)
-                    <td>Almacen Laboratorio</td>
-                    @elseif($eq->almacen_solicita == 3)
-                    <td>Almacen Obstetra</td>
-                    @elseif($eq->almacen_solicita == 4)
-                    <td>Almacen Rayos X</td>
-                    @elseif($eq->almacen_solicita == 5)
                     <td>Almacen Independencia</td>
-                    @elseif($eq->almacen_solicita == 6)
-                    <td>Almacen Olivos</td>
-                    @elseif($eq->almacen_solicita == 7)
-                    <td>Almacen Canto Rey</td>
-                    @elseif($eq->almacen_solicita == 8)
-                    <td>Almacen Vida Feliz</td>
                     @else
-                    <td>Almacen Zarate</td>
+                    <td>Almacen Olivos</td>
                     @endif
                     <td><span class="badge bg-success">{{$eq->cantidad_solicita}}</span></td>
                     <td>{{ Carbon\Carbon::createFromDate($eq->created_at)->format('d-m-Y')  }}</span></td>

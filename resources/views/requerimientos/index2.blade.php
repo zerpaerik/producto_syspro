@@ -163,23 +163,10 @@
                     <td>{{$eq->precio}}</td>
                     <td>{{$eq->medida}}</td>
                     @if($eq->almacen_solicita == 2)
-                    <td>Recepción</td>
-                    @elseif($eq->almacen_solicita == 11)
-                    <td>Laboratorio</td>
-                    @elseif($eq->almacen_solicita == 3)
-                    <td>Obstetra</td>
-                    @elseif($eq->almacen_solicita == 4)
-                    <td>Rayos X</td>
-                    @elseif($eq->almacen_solicita == 5)
                     <td>Independencia</td>
-                    @elseif($eq->almacen_solicita == 6)
-                    <td>Olivos</td>
-                    @elseif($eq->almacen_solicita == 7)
-                    <td>Canto Rey</td>
-                    @elseif($eq->almacen_solicita == 8)
-                    <td>Vida Feliz</td>
+                
                     @else
-                    <td>Zarate</td>
+                    <td>Olivos</td>
                     @endif
                     
                     
