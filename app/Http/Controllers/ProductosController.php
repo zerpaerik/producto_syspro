@@ -147,7 +147,7 @@ class ProductosController extends Controller
 
 
         $productos = DB::table('productos_almacen as a')
-        ->select('a.id','a.producto','a.cantidad','a.precio','a.vence','u.minimol','u.nombre as nompro','u.categoria','u.medida','a.almacen')
+        ->select('a.id','a.producto','a.cantidad','a.precio','a.vence','a.almacen','u.minimol','u.nombre as nompro','u.categoria','u.medida')
         ->join('productos as u','u.id','a.producto')
         ->where('a.almacen','=',2)
         ->get(); 
@@ -211,12 +211,10 @@ class ProductosController extends Controller
     {
 
 
-        if($request->session()->get('sedeName') == 'CANTO REY'){
-            $almacen = 7;
-            } elseif($request->session()->get('sedeName') == 'VIDA FELIZ'){
-            $almacen = 8;
+        if($request->session()->get('sedeName') == 'INDEPENDENCIA'){
+            $almacen = 2;
             } else {
-            $almacen = 9;
+            $almacen = 3;
             }
 
 
