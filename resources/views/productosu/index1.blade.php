@@ -140,12 +140,10 @@
                     <td>{{$an->precio}}</td>
                     <td>{{$an->precio * $an->cantidad}}</td>
                     <td>{{$an->fecha}}</td>
-                    @if($an->almacen == 7)
-                    <td>Canto Rey</td>
-                    @elseif($an->almacen == 8)
-                    <td>Vida Feliz</td>
+                    @if($an->almacen == 2)
+                    <td>Independencia</td>
                     @else
-                    <td>Zarate</td>
+                    <td>Olivos</td>
                     @endif
                     <td>{{$an->created_at}}</td>
                     <td>{{$an->user}}</td>

@@ -179,12 +179,10 @@ class ProductosUsadosController extends Controller
     public function create(Request $request)
     {
 
-        if($request->session()->get('sedeName') == 'CANTO REY'){
-            $almacen = 7;
-            } elseif($request->session()->get('sedeName') == 'VIDA FELIZ'){
-            $almacen = 8;
+        if($request->session()->get('sedeName') == 'INDEPENDENCIA'){
+            $almacen = 2;
             } else {
-            $almacen = 9;
+            $almacen = 3;
             }
 
             $productos = DB::table('productos_almacen as a')
@@ -354,12 +352,10 @@ class ProductosUsadosController extends Controller
     {
 
 
-        if($request->session()->get('sedeName') == 'CANTO REY'){
-            $almacen = 7;
-            } elseif($request->session()->get('sedeName') == 'VIDA FELIZ'){
-            $almacen = 8;
+        if($request->session()->get('sedeName') == 'INDEPENDENCIA'){
+            $almacen = 2;
             } else {
-            $almacen = 9;
+            $almacen = 3;
             }
 
 
@@ -385,12 +381,10 @@ class ProductosUsadosController extends Controller
     {
 
 
-        if($request->session()->get('sedeName') == 'CANTO REY'){
-            $almacen = 7;
-            } elseif($request->session()->get('sedeName') == 'VIDA FELIZ'){
-            $almacen = 8;
+        if($request->session()->get('sedeName') == 'INDEPENDENCIA'){
+            $almacen = 2;
             } else {
-            $almacen = 9;
+            $almacen = 3;
             }
 
 
