@@ -75,12 +75,10 @@ class ProductosUsadosController extends Controller
     public function index1(Request $request)
     {
 
-        if($request->session()->get('sedeName') == 'CANTO REY'){
-            $almacen = 7;
-            } elseif($request->session()->get('sedeName') == 'VIDA FELIZ'){
-            $almacen = 8;
+        if($request->session()->get('sedeName') == 'INDEPENDENCIA'){
+            $almacen = 2;
             } else {
-            $almacen = 9;
+            $almacen = 3;
             }
 
    
