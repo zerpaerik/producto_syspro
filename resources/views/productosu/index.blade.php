@@ -151,11 +151,9 @@
                     <td>{{$an->precio * $an->cantidad}}</td>
                     <td>{{$an->fecha}}</td>
                     @if($an->almacen == 2)
-                    <td>Recepción</td>
-                    @elseif($an->almacen == 3)
-                    <td>Obstetra</td>
+                    <td>Indepencia</td>
                     @else
-                    <td>Rayos X</td>
+                    <td>Olivos</td>
                     @endif
                     <td>{{$an->created_at}}</td>
                     <td>{{$an->user}}</td>
